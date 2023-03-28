@@ -1,0 +1,34 @@
+@import 'src/styles/main.scss';
+
+.heroTextContainer{
+margin: auto;
+text-align: center;
+}
+
+
+.heroSubtitle{
+
+
+}
+
+
+
+@media screen and (min-width: $mobile ) {
+    .heroTextContainer{
+        // max-width: 400px;
+        // font-size: 20px;
+    }
+    }
+    
+    @media screen and (min-width: $tablet) {
+    .heroTextContainer{
+        //   max-width: 480px;
+        }
+    }
+    
+    
+    @media screen and (min-width: $desktop) {
+    .heroTextContainer{
+        //   max-width: 1000px;
+        }
+    }

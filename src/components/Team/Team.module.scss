@@ -1,0 +1,49 @@
+@import 'src/styles/main.scss';
+
+.team {
+
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+
+  //  max-width: $mobile;
+  height: 100%;
+  margin: 0 auto;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(15, 10, 05, 0.8),
+      rgba(15, 10, 05, 0.8) /*  rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6) */
+    ),
+    url(../../images/tech2.jpg);
+}
+
+.teamContent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.team-sublist {
+  margin-left: 100px;
+  list-style: circle;
+}
+
+.text {
+  margin-left: 20px;
+}
+
+.items {
+  text-align: start;
+  margin: 20px auto;
+}
+
+.list {
+  display: block;
+  margin-left: 50px;
+  list-style: circle;
+  // outline: solid 1px red;
+}

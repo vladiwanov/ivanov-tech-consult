@@ -1,0 +1,195 @@
+@import 'src/styles/main';
+
+
+.navigation{
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  left: 0px;
+  display: block;
+  padding: 2px;
+}
+
+.navigationList{
+margin-top: 5px;
+margin-left: 25px;
+// text-align: start;
+// list-style:circle;
+}
+
+.navigationListTitle{
+margin-top: 30px;
+font-size: 12px;
+// text-align: start;
+text-align: center;
+margin-left: 15px;
+}
+
+.navigationItem{
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Montserrat' ,sans-serif;
+  line-height: 1.5rem;
+  font-weight: 100;
+  // margin: 0 5px;
+  &:focus,
+  &:hover{
+color: $accent-color;
+  color: #AAFFFF;
+  cursor: pointer;
+
+}
+}
+
+// =============menuBackdrop==========================
+.menuBackdrop{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  z-index: 50;
+  display: block;
+  width: 100vw;
+  height: 400px;
+  background-color: rgba(20,20,20,0.8);
+
+  @media screen and (min-width:$tablet) {
+      height: 55vw;
+  }
+
+  @media screen and (min-width:$desktop) {
+      height: 50vw;
+  }
+}
+// =============menuBackdrop= END=========================
+
+// ===========Navigation  Menu Button=============
+.menuButton {
+  position: absolute;
+
+  top:0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  fill: #fff;
+  outline: none;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  fill: #fff;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+  }
+ 
+}
+
+.menuCloseButton {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  fill: #fff;
+  outline: none;
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  fill: #fff;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+  }
+}
+// ===========Navigation  Menu Button END =============
+
+
+@media screen and (min-width:$mobile) {
+  
+  .navigation{
+
+  }
+  .navigationItem{
+    font-size: 14px;
+    margin: 0 10px;
+  }
+}
+
+
+.navigationListTitle{
+  margin-top: 35px;
+  font-size: 14px;
+  }
+  
+
+  .menuButton {
+    width: 40px;
+  height: 40px;
+  }
+
+
+@media screen and (min-width:$tablet) {
+.navigation{
+}
+  .navigationList{
+    margin-top: 10px;
+    justify-content: start;
+  }
+
+  .navigationListTitle{
+    margin-top: 45px;
+    font-size: 18px;
+    }
+    
+  .navigationItem{
+    font-size:14px;
+  }
+
+  .menuButton {
+    width: 60px;
+    height: 60px;
+  }
+
+  .menuCloseButton {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+@media screen and (min-width:$desktop) {
+    .navigationListTitle{
+    margin-top: 50px;
+    font-size: 22px;
+    // text-align: start;
+    margin-left: 15px;
+    }
+    
+  .navigationItem{
+    line-height: 2.5rem;
+    // letter-spacing: 0.5rem;
+    font-size: 25px;
+    margin: 0 20px;
+  }
+
+  .menuButton {
+    width: 100px;
+    height: 100px;
+  }
+}

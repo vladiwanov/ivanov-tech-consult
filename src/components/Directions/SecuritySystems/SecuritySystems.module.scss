@@ -1,0 +1,31 @@
+@import 'src/styles/main';
+@import 'src/styles/components/business';
+
+
+.cotentContainer{
+  margin-top: 20px;
+}
+
+
+.securityImg{
+  display: block;
+  width: 95%;
+  height: auto;
+  // outline: 1px solid red;
+
+}
+
+@media screen and (min-width:$mobile) {
+  
+}
+
+@media screen and (min-width:$tablet) {
+ 
+.securityImg {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width:$desktop) {
+  
+}

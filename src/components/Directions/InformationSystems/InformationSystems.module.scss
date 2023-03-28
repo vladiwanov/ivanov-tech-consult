@@ -1,0 +1,139 @@
+@import 'src/styles/main';
+@import 'src/styles/components/business';
+
+.informSystems{
+  box-sizing: border-box;
+  // outline: 1px solid red;
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(
+    to right,
+    rgba(15, 10, 05, 0.7),
+    rgba(15, 10, 05, 0.7)),
+    //  rgba(0, 0, 0, 0.6),
+    // rgba(0, 0, 0, 0.6)),
+     url('https://introserv.eu/ru/assets/images/blog/blog300321.jpg')
+}
+
+.contentIT{
+  display: block;
+  width: 100%;
+  // width: auto;
+  text-align: center;
+  // justify-content: space-around;
+  // align-items: center;
+  margin-top: 10px auto 15px;
+}
+.imgArray{
+  display: block;
+  max-width: 95%;
+  margin: auto;
+}
+
+.textContainer{
+  display: block;
+  font-family: 'Montserrat';
+
+}
+
+.textContent{
+  max-width: 90%;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  text-align: start;
+  line-height: 1.1rem;
+  font-size: 12px;
+
+}
+
+
+
+
+
+.images{
+  display: block;
+  width:100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+
+@media screen and (min-width:$mobile) {
+  .textContent{
+    line-height: 1.4rem;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:$tablet) {
+  .contentIT {
+      display: flex;
+      text-align: center;
+      width: 100%;
+      // width: auto;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: 15px auto 20px;
+
+  }
+
+  .textContainer{
+    display: flex;
+    justify-content: space-around;
+    // align-items: start;
+    font-family: 'Montserrat';
+  }
+
+  .imgArray {
+      display: block;
+      width: auto;
+      height: 100%;
+      margin: auto;
+    }
+
+  .images{
+      width: 50%;
+      margin-bottom: 0;
+    }
+
+  .textContent {
+    width: calc(100%/4);
+      font-size: 16px;
+      margin: 10px 20px;
+    }
+}
+
+@media screen and (min-width:$desktop) {
+  .textContent {
+    line-height: 2rem;
+    font-size: 18px;
+    margin: 10px 40px;
+
+  }
+
+  .contentIT {
+    margin-top: 20px auto 30px;
+
+  }
+}
+
+
+
+
+/* 
+ 
+. общий  - <section classsName = {s.businessItem}>
+ . context - <div className={s.content}>
+. img - <img classNAme = {s.img}>
+.text <ul className={s.list}>
+ .     <li className = {s.item}>
+ . заголовок <h4 className = {s.title}>
+ 
+ 
+ 
+ 
+ 
+ 
+ */

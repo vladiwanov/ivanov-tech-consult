@@ -1,0 +1,52 @@
+.title {
+  margin-bottom: 15px;
+  // margin-top: 15px;
+  // color: $text-title-color;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: calc(33 / 28);
+  text-align: center;
+  letter-spacing: 0.03rem;
+}
+
+.subTitle {
+  display: block;
+  text-align: center;
+  margin: auto;
+  font-size: 12px;
+  margin-bottom: 15px;
+  // opacity: 0;
+}
+
+@media screen and (min-width: $mobile) {
+  .title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 1.17;
+  }
+  .subTitle {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .subTitle {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .title {
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 1.17;
+  }
+  .subTitle {
+    font-size: 20px;
+  }
+}

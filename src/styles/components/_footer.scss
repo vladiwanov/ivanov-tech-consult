@@ -1,0 +1,54 @@
+@import 'src/styles/main.scss';
+
+.footer {
+  // box-sizing: content-box;
+  display: block;
+  margin: auto;
+  padding: 20px 0;
+  margin: auto;
+  // background-color: $bgc-additional;
+    background-color: #ddd;
+
+  width: 100%;
+  // background-color: #000;
+  // background-color: transparent;
+}
+
+.footerTitle {
+  display: block;
+  text-align: center;
+  margin: auto;
+  font-size: 14px;
+}
+
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+}
+
+
+
+@media screen and (min-width: $mobile) {
+  .footerTitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .contacts {
+    display: flex;
+    justify-content: center;
+  }
+  .footerTitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .footerTitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+}

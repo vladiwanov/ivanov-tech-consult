@@ -1,0 +1,85 @@
+@import 'src/styles/main';
+@import 'src/styles/components/business';
+
+.electrical{
+  display: block;
+}
+
+
+.textContainer{
+margin-left: 0px;
+}
+.contentContainer{
+  margin-top: 20px;
+}
+
+.electricalContent{
+  display: block;
+  margin-top: 20px;
+}
+
+.electricalImg{
+  display: block;
+  width: 95%;
+  height: auto;
+}
+
+
+.electricalText{
+  margin-left: 0px;
+}
+
+@media screen and (min-width:$mobile) {
+  .electricalContent{
+
+  }
+
+  .electricalText {
+    margin-left: 0px;
+  }
+
+
+
+}
+@media screen and (min-width:$tablet) {
+  .electricalSection {
+    margin: 20px auto;
+  }
+
+  .textContainer{
+    margin-left: 30px;
+  }
+
+  .electricalContent {
+    display: flex;
+    // justify-content: space-between;
+    margin: 20px  ;
+    // align-self: auto;
+    align-items: center;
+  }
+  .electricalText {
+    margin-left: 40px;
+  }
+  .electricalImg {
+    display: block;
+    width: 45%;
+    height: auto;
+  }
+
+}
+
+@media screen and (min-width:$desktop) {
+  .electricalSection {
+    margin: 30px auto;
+  }
+
+  .textContainer{
+    margin-left: 40px;
+  }
+
+  .electricalContent {}
+  .electricalText {
+    margin-left: 50px;
+  }
+}
+

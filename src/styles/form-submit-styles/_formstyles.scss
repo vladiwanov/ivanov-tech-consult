@@ -1,0 +1,40 @@
+@import 'src/styles/form-submit-styles/checkbox';
+@import 'src/styles/form-submit-styles/submitInput';
+@import 'src/styles/form-submit-styles/comment';
+
+.formField {
+  position: relative;
+  margin: 40px auto;
+  outline: $accent-color-alt;
+}
+
+.formTitle {
+  display: block;
+  text-align: center;
+  margin: 20px auto 40px;
+  color: #202020;
+  font-size: 18px;
+}
+
+.comments {
+  position: relative;
+  margin: 50px auto;
+}
+
+.button {
+  display: block;
+  margin: 20px auto;
+  border: none;
+  border-radius: 5px;
+  // background-color: $accent-secondary-color;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: $primary-text-color;
+  cursor: pointer;
+
+  &:disabled {
+    // visibility: hidden;
+    opacity: 30%;
+    cursor: not-allowed;
+  }
+}

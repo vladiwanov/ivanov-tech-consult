@@ -1,0 +1,23 @@
+@import "src/styles/main";
+
+.appbar{
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid $accent-color;
+  margin-bottom: 10px;
+  padding: 0;
+
+
+@media screen and ( min-width:$mobile ) {
+  margin-bottom: 10px;
+}
+
+@media screen and ( min-width:$mobile ) {
+  margin-bottom: 15px;
+}
+
+@media screen and ( min-width:$mobile ) {
+  margin-bottom: 20px;
+}
+
+}
