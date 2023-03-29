@@ -8,7 +8,6 @@ export default function Business() {
   return (
     <div className={s.business}>
       <h2 className={s.title}>{title}</h2>
-      {/*  при нобходимости вставить  модуль  (внизу кода)  */}
       <Directions />
     </div>
   );
