@@ -1,8 +1,8 @@
 import s from './Benefits.module.scss';
 import images from '../../db/images';
 import { useEffect } from 'react';
-import io from 'components/tools/io';
-import LanguageContent from 'components/tools/LanguageContent';
+import io from '../../components/tools/io';
+import LanguageContent from '../../components/tools/LanguageContent';
 
 export default function Benefits() {
   const { img1, img2, img3 } = images;

@@ -14,8 +14,8 @@ export default function Team() {
   }, []);
   return (
     // <section className={`${s.section} ${s.team}`}>
-    <section className={`section ${s.team}`} id="team">
-      <div className="container">
+    <section className={`section ${s.team}`} >
+      <div className="container" id="team">
         <h2 className="title">{team.title}</h2>
         <div className={`${s.teamContent} ${s.animationItems}`} id="ourTeam">
           <div className={s.text}>
