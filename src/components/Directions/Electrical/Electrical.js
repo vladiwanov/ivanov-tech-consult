@@ -6,7 +6,6 @@ import io from "../../tools/io";
 
 export default function Electrical() {
   const electrical = LanguageContent("electrical");
-  console.log(electrical);
   useEffect(() => {
     io("contentItems", "-5%", "contentAnimation");
   }, []);
