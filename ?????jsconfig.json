@@ -20,6 +20,24 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  "css": {
+    "indent_size": 4,
+    "indentCharacter": " ",
+    "indent_char": " ",
+    "selectorSeparatorNewLine": true,
+    "end_with_newLine": false,
+    "newLine_between_rules": true,
+    "eol": "\n"
+  },
+  "javascript": {
+    "indent_size": 4,
+    "indent_char": " ",
+    "eol": "auto",
+    "preserve_newlines": true,
+    "break_shained_methods": false,
+    "max_preserve_newlines": 0,
+  },
+  "onSave": true,
   "compilerOptions": {
     "baseUrl": "src"
   },

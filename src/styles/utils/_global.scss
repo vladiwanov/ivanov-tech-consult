@@ -1,8 +1,8 @@
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 
 }
+
 *,
 *::before,
 *::after {
@@ -23,24 +23,26 @@ body {
   color: $primary-text-color;
   background-color: #ffffff;
 }
+
 body.modal-open {
   overflow: hidden;
 }
+
 /* --------------------------------------------- common classes ------------------------------------------------------- */
 .section {
   margin: 0;
   padding: 10px 0;
   width: 100vw;
 
-  @media screen and ( min-width:$mobile ) {
+  @media screen and (min-width:$mobile ) {
     // padding: 15px 0;
   }
 
-  @media screen and ( min-width: $tablet ) {
+  @media screen and (min-width: $tablet ) {
     // padding: 20px 0;
   }
 
-  @media screen and ( min-width: $desktop ) {
+  @media screen and (min-width: $desktop ) {
     // padding: 40px 0;
   }
 }
@@ -52,15 +54,15 @@ body.modal-open {
   // padding: 0 15px;
   margin: 0 auto;
 
-  @media screen and ( min-width: $mobile ) {
+  @media screen and (min-width: $mobile ) {
     // max-width: $mobile;
   }
 
-  @media screen and ( min-width: $tablet ) {
+  @media screen and (min-width: $tablet ) {
     // max-width: $tablet;
   }
 
-  @media screen and ( min-width: $desktop ) {
+  @media screen and (min-width: $desktop ) {
     max-width: 100%;
     // padding: 0 30px;
   }
@@ -69,6 +71,7 @@ body.modal-open {
 .list {
   list-style: none;
 }
+
 h1,
 h2,
 h3,

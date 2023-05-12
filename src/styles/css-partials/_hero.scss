@@ -1,26 +1,24 @@
 //|! breakpoint - resposible -
 
 .hero {
-  display: block;
+  // display: block;
   text-align: center;
   height: 400px;
-  padding: 0;
   margin: 0 auto;
-  color: #ffffff;
+
+  // color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  // background-attachment: fixed;
   background-image:
-   linear-gradient(
-      to right,
+    linear-gradient(to right,
       // rgba(15, 10, 05, 0.6),
-      // rgba(15, 10, 05, 0.6) 
-       rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
+      // rgba(15, 10, 05, 0.6)),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
     url(../../images/img-hero-2560x1360.jpg); //! поменять изображение по размеру
-  
+
 }
 
 //| breakpoint ------------------------- mobile  -------------------------------
@@ -29,13 +27,14 @@
 
 @media screen and (min-width: $tablet) {
   .hero {
-    height: 55vw;
+    height: 90vh;
   }
 }
+
 // //| breakpoint ---------------------- desktop ----------------------------
 @media screen and (min-width: $desktop) {
   .hero {
-  height: 50vw; 
-  text-align: center;
+    height: 85vh;
+    text-align: center;
   }
 }

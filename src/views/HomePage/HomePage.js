@@ -4,14 +4,22 @@ import Hero from '../../components/Hero';
 import Business from '../../components/Business';
 import Team from '../../components/Team';
 import Footer from 'components/Footer';
+import Test from 'components/Test';
+import s from './HomePage.module.scss';
+
 export default function HomePage() {
   return (
-    <div>
-      <Hero />
-      <Benefits />
-      <Business />
-      <Team />
-      <Footer />
+    <div className={s.parallax}>
+      {/* // <div className={s}> */}
+      {/* <Test /> */}
+      <section className={`${s.bg} ${s.hero}`}></section>
+      <div>
+        <Hero />
+        <Benefits />
+        <Business />
+        <Team />
+        <Footer />
+      </div>
     </div>
   );
 }
