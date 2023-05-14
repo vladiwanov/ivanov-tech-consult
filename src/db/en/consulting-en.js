@@ -1,12 +1,12 @@
 const consulting = {
-  title: 'Consulting on systems of low-voltage complex within:',
+  title: " Engineering systems Consulting  within:",
   items: [
-    'Design and Implementation Cost Estimation',
-    'Optimization of technical solutions',
-    'Cost Optimization',
-    'Protection of design decisions',
+    "Design and Implementation Cost Estimation",
+    "Optimization of technical solutions",
+    "Cost Optimization",
+    "Protection of design decisions",
   ],
-  content: ['', ''],
+  content: ["", ""],
 };
 
 export default consulting;

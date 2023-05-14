@@ -1,15 +1,15 @@
-import s from './AudioVisualSystems.module.scss';
-import { useEffect } from 'react';
-import img from 'db/images';
-import io from 'components/tools/io';
-import LanguageContent from 'components/tools/LanguageContent';
-import arrayMaping from 'components/tools/arrayMaping';
+import s from "./AudioVisualSystems.module.scss";
+import { useEffect } from "react";
+import img from "db/images";
+import io from "components/tools/io";
+import LanguageContent from "components/tools/LanguageContent";
+import arrayMaping from "components/tools/arrayMaping";
 export default function AudioVisualSystems() {
-  const audiovisual = LanguageContent('audiovisual');
+  const audiovisual = LanguageContent("audiovisual");
 
   const { img7 } = img;
   useEffect(() => {
-    io('contentItems', '-5%', 'contentAnimation');
+    io("contentItems", "-5%", "contentAnimation");
   }, []);
   return (
     <div className={s.avSection} id="av">
