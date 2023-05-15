@@ -1,12 +1,20 @@
 const consulting = {
-  title: " Engineering systems Consulting  within:",
-  items: [
-    "Design and Implementation Cost Estimation",
+  title: "Consulting activities",
+  subtitle: [
+    "Consulting of building engineering systems within:",
+    "Development and release of design documentation for all the listed engineering sections in accordance with the norms:",
+    "Independent evaluation of the technical solutions of the above-mentioned sections",
+  ],
+  items1: [
+    "Estimation of design and implementation costs",
     "Optimization of technical solutions",
     "Cost Optimization",
-    "Protection of design decisions",
+    "Protection of project solutions",
   ],
-  content: ["", ""],
+  items2: [
+    "On the basis of own decisions",
+    "On the basis of decisions made by the customer",
+  ],
 };
 
 export default consulting;

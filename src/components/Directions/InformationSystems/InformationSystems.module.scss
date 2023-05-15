@@ -1,7 +1,7 @@
 @import 'src/styles/main';
 @import 'src/styles/components/business';
 
-.informSystems{
+.informSystems {
   box-sizing: border-box;
   // outline: 1px solid red;
   display: block;
@@ -9,16 +9,15 @@
   width: 100%;
   height: auto;
   background-attachment: fixed;
-  background-image: linear-gradient(
-    to right,
-    rgba(15, 10, 05, 0.7),
-    rgba(15, 10, 05, 0.7)),
+  background-image: linear-gradient(to right,
+      rgba(15, 10, 05, 0.7),
+      rgba(15, 10, 05, 0.7)),
     //  rgba(0, 0, 0, 0.6),
     // rgba(0, 0, 0, 0.6)),
-     url('https://introserv.eu/ru/assets/images/blog/blog300321.jpg')
+    url('../../../images/infosystems.jpg.webp')
 }
 
-.contentIT{
+.contentIT {
   display: block;
   width: 100%;
   // width: auto;
@@ -27,19 +26,20 @@
   // align-items: center;
   margin-top: 10px auto 15px;
 }
-.imgArray{
+
+.imgArray {
   display: block;
   max-width: 95%;
   margin: auto;
 }
 
-.textContainer{
+.textContainer {
   display: block;
   font-family: 'Montserrat';
 
 }
 
-.textContent{
+.textContent {
   max-width: 90%;
   font-family: 'Montserrat';
   font-weight: 300;
@@ -53,16 +53,16 @@
 
 
 
-.images{
+.images {
   display: block;
-  width:100%;
+  width: 100%;
   height: auto;
   margin-bottom: 15px;
 }
 
 
 @media screen and (min-width:$mobile) {
-  .textContent{
+  .textContent {
     line-height: 1.4rem;
     font-size: 14px;
   }
@@ -70,17 +70,17 @@
 
 @media screen and (min-width:$tablet) {
   .contentIT {
-      display: flex;
-      text-align: center;
-      width: 100%;
-      // width: auto;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-top: 15px auto 20px;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    // width: auto;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 15px auto 20px;
 
   }
 
-  .textContainer{
+  .textContainer {
     display: flex;
     justify-content: space-around;
     // align-items: start;
@@ -88,22 +88,22 @@
   }
 
   .imgArray {
-      display: block;
-      width: auto;
-      height: 100%;
-      margin: auto;
-    }
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: auto;
+  }
 
-  .images{
-      width: 50%;
-      margin-bottom: 0;
-    }
+  .images {
+    width: 50%;
+    margin-bottom: 0;
+  }
 
   .textContent {
     width: calc(100%/4);
-      font-size: 16px;
-      margin: 10px 20px;
-    }
+    font-size: 16px;
+    margin: 10px 20px;
+  }
 }
 
 @media screen and (min-width:$desktop) {

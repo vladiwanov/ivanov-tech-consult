@@ -5,10 +5,10 @@
         "sideBar.background": "#252525",
         "window.sideBar.fontFamily": "Styrene A Web"
     },
-    "editor.fontFamily": "Styrene A LC Light",
-    // "editor.fontFamily": "Space Mono For Powerline",
+    // "editor.fontFamily": "Styrene A LC Thin",
+    "editor.fontFamily": "Space Mono For Powerline",
     // "editor.fontFamily": "Monaco",
-    "editor.fontSize": 14,
+    "editor.fontSize": 13,
     // "editor.fontSize": 12,
     "editor.hover.enabled": false, // disable suggestions on hover,
     // "css": {

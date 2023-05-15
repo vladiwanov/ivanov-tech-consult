@@ -1,43 +1,43 @@
 @import 'src/styles/main';
 @import 'src/styles/components/business';
 
-.alternativeSection{
+.alternativeSection {
   margin: 10px auto;
 }
 
 
-.alternativeContainer{
+.alternativeContainer {
   display: block;
 }
 
 
-.img{
+.img {
   display: block;
   width: 95%;
   height: auto;
 }
 
 
-@media screen and (min-width:$mobile) {
-  
-}
+@media screen and (min-width:$mobile) {}
 
 @media screen and (min-width:$tablet) {
-.alternativeSection {
+  .alternativeSection {
     margin: 20px auto;
   }
-    .alternativeContainer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .img{
-      width: 45%;
-    }
+
+  .alternativeContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img {
+    width: 45%;
+  }
 }
 
 @media screen and (min-width:$desktop) {
-.alternativeSection {
+  .alternativeSection {
     margin: 30px auto;
   }
 }

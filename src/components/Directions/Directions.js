@@ -1,15 +1,11 @@
-import React from 'react';
-import s from './Directions.module.scss';
-import InformationSystems from './InformationSystems';
-import SecuritySystems from './SecuritySystems';
-import FireDefenderSystems from './FireDefenderSystems';
-import AlternativeEnergy from './AlternativeEnergy';
-import AudioVisualSystems from './AudioVisualSystems';
-import ConsultingDirection from './ConsultingDirection';
-import ProjectmakingDirecions from './ProjectmakingDirecions';
-import TechnicalEstimation from './TechnicalEstimation';
-// import LanguageContent from 'components/tools/LanguageContent';
-import Electrical from 'components/Directions/Electrical';
+import s from "./Directions.module.scss";
+import InformationSystems from "./InformationSystems";
+import SecuritySystems from "./SecuritySystems";
+import FireDefenderSystems from "./FireDefenderSystems";
+import AlternativeEnergy from "./AlternativeEnergy";
+import AudioVisualSystems from "./AudioVisualSystems";
+import ConsultingDirection from "./ConsultingDirection";
+import Electrical from "components/Directions/Electrical";
 
 export default function Directions() {
   // const directions = LanguageContent('directions');
@@ -40,12 +36,6 @@ export default function Directions() {
 
         <li className={s.items}>
           <ConsultingDirection />
-        </li>
-        <li className={s.items}>
-          <ProjectmakingDirecions />
-        </li>
-        <li className={s.items}>
-          <TechnicalEstimation />
         </li>
       </ul>
     </div>

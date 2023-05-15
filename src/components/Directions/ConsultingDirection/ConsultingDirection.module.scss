@@ -1,3 +1,54 @@
 @import 'src/styles/main';
 @import 'src/styles/components/business';
 
+.consultingSection {
+    // margin: 10px auto;
+}
+
+.consultContainer {
+    margin: 0 20px;
+}
+
+.consultingContainer {
+    display: block;
+    opacity: 0;
+}
+
+.img {
+    display: block;
+    width: 95%;
+    height: auto;
+    // opacity: 0;
+}
+
+.image2 {
+    width: 100%;
+}
+
+@media screen and (min-width:$mobile) {}
+
+@media screen and (min-width:$tablet) {
+    .consultingSection {
+        // margin: 25px auto;
+    }
+
+    .consultingContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .image2 {
+        width: 45%;
+    }
+
+    .img {
+        // width: 45%;
+    }
+}
+
+@media screen and (min-width:$desktop) {
+    .consultingSection {
+        // margin: 30px auto;
+    }
+}

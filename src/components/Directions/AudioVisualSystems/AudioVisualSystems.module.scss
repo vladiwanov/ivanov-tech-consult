@@ -2,15 +2,15 @@
 @import 'src/styles/components/business';
 
 .avSection {
-margin: 10px auto;
+  margin: 10px auto;
 }
 
-.avContainer{
+.avContainer {
   display: block;
   opacity: 0;
 }
 
-.img{
+.img {
   display: block;
   width: 95%;
   height: auto;
@@ -19,27 +19,26 @@ margin: 10px auto;
 
 
 
-
-@media screen and (min-width:$mobile) {
-  
-}
+@media screen and (min-width:$mobile) {}
 
 @media screen and (min-width:$tablet) {
   .avSection {
-      margin: 25px auto;
-    }
-  .avContainer{
+    margin: 25px auto;
+  }
+
+  .avContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-.img{
-width: 45%;
-}
+
+  .img {
+    width: 45%;
+  }
 }
 
 @media screen and (min-width:$desktop) {
   .avSection {
-      margin: 30px auto;
-    }
+    margin: 30px auto;
+  }
 }
