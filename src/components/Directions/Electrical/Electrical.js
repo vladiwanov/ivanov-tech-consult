@@ -18,18 +18,12 @@ export default function Electrical() {
         id="contentItems"
       >
         <div className={s.contentBlockImg}></div>
-        {/* <imageBlock className={s.contentBlockImg}></imageBlock> */}
-        {/* <imageContainer className={s.directionImg}>
-          <img
-            src={electrical.img}
-            alt={electrical.alt}
-            className={s.directionImage}
-          />
-        </imageContainer> */}
-        <textContainer className={s.textContainer}>
-          <p className={s.subTitle}>{electrical.content}</p>
-          {arrayMaping(electrical.list, s.sublist, s.item)}
-        </textContainer>
+        <textmodule className={s.textModule}>
+          <textcontainer className={s.textContainer}>
+            <b className={s.subTitle}>{electrical.content}</b>
+            {arrayMaping(electrical.list, s.sublist, s.item)}
+          </textcontainer>
+        </textmodule>
       </section>
     </article>
   );

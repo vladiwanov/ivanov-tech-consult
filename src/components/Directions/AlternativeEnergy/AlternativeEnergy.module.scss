@@ -1,22 +1,30 @@
 @import 'src/styles/main';
 @import 'src/styles/components/business';
+@import 'src/styles/components/directionStyles';
 
 .alternativeSection {
-  margin: 10px auto;
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #AAA;
+  margin: auto;
 }
 
+.textModule {
+  text-align: center;
+  margin: auto;
+}
 
 .alternativeContainer {
   display: block;
 }
 
-
 .img {
   display: block;
   width: 95%;
   height: auto;
+  text-align: center;
+  margin: 10px auto;
 }
-
 
 @media screen and (min-width:$mobile) {}
 
@@ -27,12 +35,13 @@
 
   .alternativeContainer {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
   }
 
   .img {
     width: 45%;
+    margin: 0;
   }
 }
 

@@ -1,0 +1,24 @@
+// * класс секции контента  
+.directionContent {
+    display: block;
+    margin-top: 20px;
+}
+
+@media screen and (min-width:$mobile) {}
+
+@media screen and (min-width:$tablet) {
+
+    .directionContent {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width:$desktop) {
+
+    .directionContent {}
+
+}

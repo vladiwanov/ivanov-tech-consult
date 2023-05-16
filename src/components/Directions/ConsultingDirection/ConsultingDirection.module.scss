@@ -2,12 +2,28 @@
 @import 'src/styles/components/business';
 
 .consultingSection {
-    // margin: 10px auto;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #AAA;
+    margin: auto;
 }
 
 .consultContainer {
     margin: 0 20px;
 }
+
+
+.contentBlockImg {
+    width: 95%;
+    height: 150px;
+    margin: 10px auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../../images/tech2.jpg);
+}
+
+
 
 .consultingContainer {
     display: block;
@@ -25,17 +41,29 @@
     width: 100%;
 }
 
-@media screen and (min-width:$mobile) {}
+@media screen and (min-width:$mobile) {
+    .contentBlockImg {
+        width: 95%;
+        height: 250px;
+        text-align: center;
+    }
+}
 
 @media screen and (min-width:$tablet) {
     .consultingSection {
         // margin: 25px auto;
     }
 
+    .contentBlockImg {
+        width: 65%;
+        height: 350px;
+    }
+
     .consultingContainer {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin: 0 auto 20px;
     }
 
     .image2 {
@@ -50,5 +78,11 @@
 @media screen and (min-width:$desktop) {
     .consultingSection {
         // margin: 30px auto;
+    }
+
+    .contentBlockImg {
+        width: 55%;
+        height: 400px;
+        margin: 0;
     }
 }

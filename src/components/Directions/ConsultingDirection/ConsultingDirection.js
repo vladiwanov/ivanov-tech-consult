@@ -16,10 +16,9 @@ export default function ConsultingDirection() {
         <div className={s.consultContainer}>
           <h3 className={s.subTitle}>{consulting.title}</h3>
           <div className={s.consultingContainer} id="contentItems">
-            <div className={s.image2}>
-              <img src={img} className={s.img} />
-            </div>
-            <div className={`item ${s.businessItem}`}>
+            <imageContainer className={s.contentBlockImg}></imageContainer>
+
+            <div className={`${s.businessItem}`}>
               <h4 className={s.subTitle}>{consulting.subtitle[0]}</h4>
               <div className={s.animationItems} id="contentItems">
                 {arrayMaping(consulting.items1, s.sublist, s.item)}

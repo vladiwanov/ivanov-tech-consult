@@ -1,25 +1,24 @@
 @import 'src/styles/main';
 @import 'src/styles/components/business';
+@import 'src/styles/components/directionStyles';
 // @import 'src/styles/components/imageStyles';
-
 
 // * класс всего модулю
 .electrical {
   display: block;
+  text-align: center;
   border-bottom: 1px solid #AAA;
+  margin: auto;
 }
-
-// * класс секции контента  
-.directionContent,
-.electricalContent {
-  display: block;
-  margin-top: 20px;
-}
-
 
 // * класс текстового блока
 .textContainer {
   margin-left: 0px;
+}
+
+.textModule {
+  text-align: center;
+  margin: auto;
 }
 
 
@@ -27,6 +26,7 @@
 .contentBlockImg {
   width: 95%;
   height: 150px;
+  margin: 10px auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,28 +34,15 @@
 }
 
 
-
-.contentContainer {
-  margin-top: 20px;
-}
-
 @media screen and (min-width:$mobile) {
-
-
   .contentBlockImg {
     width: 95%;
     height: 250px;
-    // outline: 4px solid red;
+    text-align: center;
   }
-
-
 }
 
 @media screen and (min-width:$tablet) {
-  .electricalSection {
-    margin: 20px auto;
-  }
-
   .textContainer {
     margin-left: 30px;
   }
@@ -64,37 +51,17 @@
     width: 45%;
     height: 250px;
   }
-
-  .directionContent,
-  .electricalContent {
-    display: flex;
-    // justify-content: space-between;
-    margin: 20px;
-    // align-self: auto;
-    align-items: center;
-  }
-
 }
 
 @media screen and (min-width:$desktop) {
-  .electricalSection {
-    margin: 30px auto;
-  }
-
-
   .contentBlockImg {
     width: 45%;
     height: 400px;
+    margin: 0;
   }
 
   .textContainer {
     margin-left: 40px;
   }
 
-  .directionContent,
-  .electricalContent {}
-
-  // .electricalText {
-  //   margin-left: 50px;
-  // }
 }
