@@ -11,20 +11,26 @@ export default function Electrical() {
   }, []);
 
   return (
-    <div className={s.electrical} id="EL">
+    <article className={s.electrical} id="EL">
       <h4 className={s.subTitle}>{electrical.title}</h4>
-      <div
-        className={`${s.electricalContent} ${s.animationItems}`}
+      <section
+        className={`${s.directionContent} ${s.animationItems}`}
         id="contentItems"
       >
-        <div className={s.electricalImg}>
-          <img src={electrical.img} alt={electrical.alt} />
-        </div>
-        <div className={s.textContainer}>
+        <div className={s.contentBlockImg}></div>
+        {/* <imageBlock className={s.contentBlockImg}></imageBlock> */}
+        {/* <imageContainer className={s.directionImg}>
+          <img
+            src={electrical.img}
+            alt={electrical.alt}
+            className={s.directionImage}
+          />
+        </imageContainer> */}
+        <textContainer className={s.textContainer}>
           <p className={s.subTitle}>{electrical.content}</p>
           {arrayMaping(electrical.list, s.sublist, s.item)}
-        </div>
-      </div>
-    </div>
+        </textContainer>
+      </section>
+    </article>
   );
 }

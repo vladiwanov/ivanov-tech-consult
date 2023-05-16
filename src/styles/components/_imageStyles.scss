@@ -1,0 +1,40 @@
+.directionImg {
+    width: 95%;
+    height: 90%;
+}
+
+
+.directionImage {
+    display: block;
+    // width: 95%;
+    // height: auto;
+    object-fit: cover;
+}
+
+
+
+
+@media screen and (min-width:$mobile) {
+
+    .directionImg,
+    .directionImage {
+        width: 95%;
+        // height: auto;
+        // object-fit: cover;
+    }
+}
+
+
+@media screen and (min-width:$tablet) {
+
+    .directionImg,
+    .electricalImg {
+        display: block;
+        width: 45%;
+        height: auto;
+    }
+
+}
+
+
+@media screen and (min-width:$desktop) {}

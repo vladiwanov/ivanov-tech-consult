@@ -1,42 +1,52 @@
 @import 'src/styles/main';
 @import 'src/styles/components/business';
+// @import 'src/styles/components/imageStyles';
 
+
+// * класс всего модулю
 .electrical {
   display: block;
+  border-bottom: 1px solid #AAA;
 }
 
-
-.textContainer {
-  margin-left: 0px;
-}
-
-.contentContainer {
-  margin-top: 20px;
-}
-
+// * класс секции контента  
+.directionContent,
 .electricalContent {
   display: block;
   margin-top: 20px;
 }
 
-.electricalImg {
-  display: block;
-  width: 95%;
-  height: auto;
-}
 
-
-.electricalText {
+// * класс текстового блока
+.textContainer {
   margin-left: 0px;
 }
 
+
+// * класс блока изображения
+.contentBlockImg {
+  width: 95%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../../images/EL.jpeg);
+}
+
+
+
+.contentContainer {
+  margin-top: 20px;
+}
+
 @media screen and (min-width:$mobile) {
-  .electricalContent {}
 
-  .electricalText {
-    margin-left: 0px;
+
+  .contentBlockImg {
+    width: 95%;
+    height: 250px;
+    outline: 4px solid red;
   }
-
 
 
 }
@@ -50,22 +60,18 @@
     margin-left: 30px;
   }
 
+  .contentBlockImg {
+    width: 45%;
+    height: 250px;
+  }
+
+  .directionContent,
   .electricalContent {
     display: flex;
     // justify-content: space-between;
     margin: 20px;
     // align-self: auto;
     align-items: center;
-  }
-
-  .electricalText {
-    margin-left: 40px;
-  }
-
-  .electricalImg {
-    display: block;
-    width: 45%;
-    height: auto;
   }
 
 }
@@ -75,13 +81,20 @@
     margin: 30px auto;
   }
 
+
+  .contentBlockImg {
+    width: 45%;
+    height: 400px;
+  }
+
   .textContainer {
     margin-left: 40px;
   }
 
+  .directionContent,
   .electricalContent {}
 
-  .electricalText {
-    margin-left: 50px;
-  }
+  // .electricalText {
+  //   margin-left: 50px;
+  // }
 }
