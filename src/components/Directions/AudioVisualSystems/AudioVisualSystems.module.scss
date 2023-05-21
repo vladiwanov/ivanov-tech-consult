@@ -1,8 +1,13 @@
 @import 'src/styles/main';
 @import 'src/styles/components/business';
+@import 'src/styles/components/directionStyles';
 
 .avSection {
-  margin: 10px auto;
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #AAA;
+  margin: auto;
+  // margin: 10px auto;
 }
 
 .avContainer {
@@ -14,7 +19,8 @@
   display: block;
   width: 95%;
   height: auto;
-  // opacity: 0;
+  text-align: center;
+  margin: 10px auto;
 }
 
 
@@ -34,6 +40,7 @@
 
   .img {
     width: 45%;
+    margin: 0;
   }
 }
 

@@ -1,31 +1,71 @@
 @import 'src/styles/main';
 @import 'src/styles/components/business';
+@import 'src/styles/components/directionStyles';
+
+.secsystems {
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #AAA;
+  margin: auto;
+}
 
 
-.cotentContainer{
+.cotentContainer {
   margin-top: 20px;
 }
 
 
-.securityImg{
-  display: block;
+// * класс блока изображения
+.contentBlockImg {
   width: 95%;
-  height: auto;
-  // outline: 1px solid red;
-
+  height: 150px;
+  margin: 10px auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../../images/security_opt.jpg);
 }
+
+// .securityImg {
+//   display: block;
+//   width: 95%;
+//   height: auto;
+//   // outline: 1px solid red;
+
+// }
 
 @media screen and (min-width:$mobile) {
-  
-}
-
-@media screen and (min-width:$tablet) {
- 
-.securityImg {
-    width: 45%;
+  .contentBlockImg {
+    width: 95%;
+    height: 250px;
+    text-align: center;
   }
 }
 
+@media screen and (min-width:$tablet) {
+  .secsystems {
+    margin: 20px auto;
+  }
+
+  .contentBlockImg {
+    width: 45%;
+    height: 500px;
+    margin-left: 15px;
+  }
+
+  // .securityImg {
+  //   width: 45%;
+  // }
+}
+
 @media screen and (min-width:$desktop) {
-  
+  .secsystems {
+    margin: 30px auto;
+  }
+
+  .contentBlockImg {
+    width: 45%;
+    height: 400px;
+    // margin: 0;
+  }
 }

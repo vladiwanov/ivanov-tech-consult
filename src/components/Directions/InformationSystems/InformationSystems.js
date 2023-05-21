@@ -1,20 +1,23 @@
-import s from './InformationSystems.module.scss';
-import { useEffect } from 'react';
-import io from 'components/tools/io';
-import arrayMaping from 'components/tools/arrayMaping';
-import LanguageContent from 'components/tools/LanguageContent';
+import s from "./InformationSystems.module.scss";
+import { useEffect } from "react";
+import io from "components/tools/io";
+import arrayMaping from "components/tools/arrayMaping";
+import LanguageContent from "components/tools/LanguageContent";
 // import SubmitButton from 'components/Submit/SubmitButton';
 
 export default function InformationSystems() {
-  const informationsystems = LanguageContent('informationsystems');
+  const informationsystems = LanguageContent("informationsystems");
 
   useEffect(() => {
-    io('lan', '-10%', 'contentAnimation');
+    io("contentItems", "-10%", "contentAnimation");
   }, []);
   return (
-    <div className={s.informSystems} id="inform">
+    <article className={s.informSystems} id="inform">
       <h4 className={s.subTitle}>{informationsystems.title}</h4>
-      <div className={`${s.contentIT} ${s.animationItems}`} id="lan">
+      <section
+        className={`${s.directionContent} ${s.animationItems}`}
+        id="contentItems"
+      >
         <div className={s.imgArray}>
           {/* <img
             className={s.images}
@@ -33,8 +36,8 @@ export default function InformationSystems() {
             <p className={s.item}>{informationsystems.contentLAN[0]}</p>
             {arrayMaping(
               informationsystems.detailsDATA,
-              '',
-              '',
+              "",
+              ""
               // s.textContent,
             )}
           </li>
@@ -42,8 +45,8 @@ export default function InformationSystems() {
             <p className={s.item}>{informationsystems.contentLAN[1]}</p>
             {arrayMaping(
               informationsystems.detailsSCS,
-              '',
-              '',
+              "",
+              ""
               // s.textContent,
             )}
           </li>
@@ -51,8 +54,8 @@ export default function InformationSystems() {
             <p className={s.item}>{informationsystems.contentLAN[2]}</p>
             {arrayMaping(
               informationsystems.detailsLAN,
-              '',
-              '',
+              "",
+              ""
               // s.textContent,
             )}
           </li>
@@ -60,8 +63,8 @@ export default function InformationSystems() {
             <p className={s.item}>{informationsystems.contentLAN[3]}</p>
           </li>
         </ul>
-      </div>
+      </section>
       {/* <SubmitButton /> */}
-    </div>
+    </article>
   );
 }
