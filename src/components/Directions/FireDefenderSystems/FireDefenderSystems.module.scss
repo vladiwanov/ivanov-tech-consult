@@ -1,68 +1,75 @@
 @import 'src/styles/main';
 @import 'src/styles/components/business';
+@import 'src/styles/components/directionStyles';
 
 .fireSection {
-  margin: 10px auto;
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #AAA;
+  margin: auto;
 }
 
-.fireDefenderContent{
-display: block;
-margin-top: 20px;
+.fireDefenderContent {
+  display: block;
+  margin-top: 20px;
 }
 
-.fireImg{
+.fireImg {
   display: block;
   width: 95%;
   height: auto;
+  text-align: center;
+  margin: 10px auto;
 }
 
 
-.firedeDenderText{
+.firedeDenderText {
   margin-left: 0px;
 }
 
 @media screen and (min-width:$mobile) {
-  .fireDefenderContent{
+  .fireDefenderContent {}
 
+  .firedeDenderText {
+    margin-left: 0px;
   }
-
-    .firedeDenderText {
-      margin-left: 0px;
-    }
 
 
 
 }
+
 @media screen and (min-width:$tablet) {
   .fireSection {
-      margin: 20px auto;
-    }
+    margin: 20px auto;
+  }
 
   .fireDefenderContent {
     display: flex;
     // justify-content: space-between;
-    margin: 20px  ;
+    margin: 20px;
     // align-self: auto;
     align-items: center;
   }
-    .firedeDenderText {
-      margin-left: 40px;
-    }
-.fireImg {
-  display: block;
-  width: 45%;
-  height: auto;
-}
-        
+
+  .firedeDenderText {
+    margin-left: 40px;
+  }
+
+  .fireImg {
+    width: 45%;
+    margin: 0;
+  }
+
 }
 
 @media screen and (min-width:$desktop) {
   .fireSection {
-      margin: 30px auto;
-    }
-  .fireDefenderContent {}
-    .firedeDenderText {
-      margin-left: 50px;
-    }
-}
+    margin: 30px auto;
+  }
 
+  .fireDefenderContent {}
+
+  .firedeDenderText {
+    margin-left: 50px;
+  }
+}
