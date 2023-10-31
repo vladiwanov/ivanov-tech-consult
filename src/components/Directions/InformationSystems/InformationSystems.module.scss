@@ -6,8 +6,10 @@
   // outline: 1px solid red;
   display: block;
   margin: auto;
-  width: 100%;
-  height: auto;
+  // width: 100%;
+  width: auto;
+  // height:auto;
+    height: 100%;
   background-attachment: fixed;
 background-size: cover;
   background-image: linear-gradient(to right,
@@ -15,7 +17,7 @@ background-size: cover;
       rgba(15, 10, 05, 0.7)),
     //  rgba(0, 0, 0, 0.6),
     // rgba(0, 0, 0, 0.6)),
-    url('../../../images/infosystems.jpg.webp')
+    url('../../../images/informSys.jpeg')
 }
 
 .contentIT {
