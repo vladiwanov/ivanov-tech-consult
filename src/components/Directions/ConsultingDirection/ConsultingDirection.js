@@ -16,7 +16,7 @@ export default function ConsultingDirection() {
         <div className={s.consultContainer}>
           <h3 className={s.subTitle}>{consulting.title}</h3>
           <div className={s.consultingContainer} id="contentItems">
-            <imageContainer className={s.contentBlockImg}></imageContainer>
+            <div className={s.contentBlockImg}></div> 
 
             <div className={`${s.businessItem}`}>
               <h4 className={s.subTitle}>{consulting.subtitle[0]}</h4>

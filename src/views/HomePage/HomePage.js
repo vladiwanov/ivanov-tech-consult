@@ -4,7 +4,7 @@ import Hero from '../../components/Hero';
 import Business from '../../components/Business';
 import Team from '../../components/Team';
 import Footer from 'components/Footer';
-import Test from 'components/Test';
+// import Test from 'components/Test';
 import s from './HomePage.module.scss';
 
 export default function HomePage() {

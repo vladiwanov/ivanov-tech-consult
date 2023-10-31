@@ -9,6 +9,7 @@
   width: 100%;
   height: auto;
   background-attachment: fixed;
+background-size: cover;
   background-image: linear-gradient(to right,
       rgba(15, 10, 05, 0.7),
       rgba(15, 10, 05, 0.7)),
@@ -48,10 +49,6 @@
   font-size: 12px;
 
 }
-
-
-
-
 
 .images {
   display: block;

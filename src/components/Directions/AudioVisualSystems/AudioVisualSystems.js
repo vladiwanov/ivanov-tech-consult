@@ -18,11 +18,11 @@ export default function AudioVisualSystems() {
         className={`${s.directionContent} ${s.animationItems}`}
         id="contentItems"
       >
-        <textmodule className={s.textModule}>
-          <textcontainer className={s.textContainer}>
+        <section className={s.textModule}>
+          <div className={s.textContainer}>
             {arrayMaping(audiovisual.items, s.sublist, s.item)}
-          </textcontainer>
-        </textmodule>
+          </div>
+        </section>
 
         <img
           src={img7}

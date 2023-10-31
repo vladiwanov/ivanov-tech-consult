@@ -22,12 +22,12 @@ export default function FireDefenderSystems() {
       >
         <img className={s.fireImg} src={img8} alt="fire defender systems" />
 
-        <textmodule className={s.textModule}>
-          <textcontainer className={s.textContainer}>
+        <section className={s.textModule}>
+          <div className={s.textContainer}>
             <p className={s.item}>{fire.details}</p>
             {arrayMaping(fire.items, s.sublist, s.item)}
-          </textcontainer>
-        </textmodule>
+          </div>
+        </section>
       </section>
     </article>
   );

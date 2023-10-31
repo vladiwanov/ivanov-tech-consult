@@ -18,11 +18,11 @@ export default function AlternativeEnergy() {
         className={`${s.directionContent} ${s.animationItems}`}
         id="contentItems"
       >
-        <textmodule className={s.textModule}>
-          <textcontainer className={s.textContainer}>
+        <div className={s.textModule}>
+          <div className={s.textContainer}>
             {arrayMaping(alternativeEnergy.items, s.sublist, s.item)}
-          </textcontainer>
-        </textmodule>
+          </div>
+        </div>
 
         <img className={s.img} src={img} alt="alternative Energy directions" />
       </section>

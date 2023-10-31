@@ -18,12 +18,12 @@ export default function Electrical() {
         id="contentItems"
       >
         <div className={s.contentBlockImg}></div>
-        <textmodule className={s.textModule}>
-          <textcontainer className={s.textContainer}>
+        <section className={s.textModule}>
+          <div className={s.textContainer}>
             <b className={s.subTitle}>{electrical.content}</b>
             {arrayMaping(electrical.list, s.sublist, s.item)}
-          </textcontainer>
-        </textmodule>
+          </div>
+        </section>
       </section>
     </article>
   );

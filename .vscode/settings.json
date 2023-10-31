@@ -3,10 +3,10 @@
         "editor.background": "#000000",
         "editor.selectionBackground": "#909090",
         "sideBar.background": "#252525",
-        "window.sideBar.fontFamily": "Styrene A Web"
+        // "window.sideBar.fontFamily": "Styrene A Web"
     },
-    // "editor.fontFamily": "Styrene A LC Thin",
-    "editor.fontFamily": "Space Mono For Powerline",
+    "editor.fontFamily": "Styrene A LC Light",
+    // "editor.fontFamily": "Space Mono For Powerline",
     // "editor.fontFamily": "Monaco",
     "editor.fontSize": 13,
     // "editor.fontSize": 12,
