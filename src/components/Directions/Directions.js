@@ -24,9 +24,9 @@ export default function Directions() {
           <FireDefenderSystems />
         </li>
 
-        <li className={s.items}>
+        {/* <li className={s.items}>
           <AudioVisualSystems />
-        </li>
+        </li> */}
         <li className={s.items}>
           <Electrical />
         </li>
