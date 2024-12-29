@@ -11,7 +11,7 @@ html {
 
 body {
   margin: 0;
-
+  // box-sizing: border-box;
   font-family: Open Sans, sans-serif;
   // font-family: Source Sans Pro, sans-serif;
   font-style: normal;
@@ -22,6 +22,8 @@ body {
   letter-spacing: 0.02rem;
   color: $primary-text-color;
   background-color: #ffffff;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 body.modal-open {
