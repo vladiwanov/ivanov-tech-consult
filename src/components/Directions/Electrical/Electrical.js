@@ -7,7 +7,8 @@ import io from "../../tools/io";
 export default function Electrical() {
   const electrical = LanguageContent("electrical");
   useEffect(() => {
-    io("contentItems", "-5%", "contentAnimation");
+    // io("contentItems", "-5%", "contentAnimation");
+    io("contentItems", "-5%", "portfolioAnimation");
   }, []);
 
   return (
