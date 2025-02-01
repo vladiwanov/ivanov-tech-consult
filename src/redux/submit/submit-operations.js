@@ -1,5 +1,6 @@
-import axios from 'axios';
-import * as actions from './submit-actions';
+import axios from "axios";
+import * as actions from "./submit-actions";
+import serverAddr from "./serverAddr";
 const {
   submitContactRequest,
   submitContactSuccess,
@@ -7,18 +8,22 @@ const {
   clearSubmitStatusAction,
 } = actions;
 
-axios.defaults.baseURL =
-  process.env.NODE_ENV === 'development'
-    ? 'http://localhost:3000/api/contacts'
-    : 'https://app.buddy.works/iv-en/iv-en-backend/api/contacts';
+// submit address:
+serverAddr();
+axios.defaults.baseURL = `${serverAddr()}/contacts`;
+
+// axios.defaults.baseURL =
+//   process.env.NODE_ENV === "development"
+//     ? "http://localhost:3000/api/contacts"
+//     : "https://app.buddy.works/iv-en/iv-en-backend/api/contacts";
 // 'https://iv-engineering.herokuapp.com/api/contacts';
 // ('https://app.buddy.works/iv-en/iv-en-backend/api/contacts');
 // // 'https://iv-engineering.herokuapp.com/api/contacts';
-const addContact = contact => async dispatch => {
-  const newContact = { ...contact, from: 'ITC' };
+const addContact = (contact) => async (dispatch) => {
+  const newContact = { ...contact, from: "ITC" };
   dispatch(submitContactRequest());
   try {
-    const { data } = await axios.post('', newContact);
+    const { data } = await axios.post("", newContact);
 
     dispatch(submitContactSuccess(data.status));
   } catch (error) {
@@ -27,7 +32,7 @@ const addContact = contact => async dispatch => {
   }
 };
 
-const clearSubmitStatusOperation = value => dispatch => {
+const clearSubmitStatusOperation = (value) => (dispatch) => {
   dispatch(clearSubmitStatusAction(value));
 };
 

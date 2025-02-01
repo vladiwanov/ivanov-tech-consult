@@ -14,25 +14,26 @@ import consultingUa from "db/ua/consulting-ua";
 import gobackUa from "db/ua/goback-ua";
 import navigationUA from "db/ua/navigation-ua";
 import electricalUA from "db/ua/electrical-ua";
-
+import submitFormUA from "db/ua/submitForm-ua.json";
 
 const ua = {
-    hero: heroUa,
-    business: businessUa,
-    directions: directionsUa,
-    benefits: benefitsUa,
-    informationsystems: informationsystemsUa,
-    team: teamUa,
-    submit: submitUa,
-    contactUs: contactUsUa,
-    securitySystems: securitySystemsUa,
-    fire: fireUa,
-    cctv: cctvUa,
-    alternativeEnergy: alternativeEnergyUa,
-    consulting: consultingUa,
-    goback: gobackUa,
-    navigation: navigationUA,
-    electrical: electricalUA,
+  hero: heroUa,
+  business: businessUa,
+  directions: directionsUa,
+  benefits: benefitsUa,
+  informationsystems: informationsystemsUa,
+  team: teamUa,
+  submit: submitUa,
+  contactUs: contactUsUa,
+  securitySystems: securitySystemsUa,
+  fire: fireUa,
+  cctv: cctvUa,
+  alternativeEnergy: alternativeEnergyUa,
+  consulting: consultingUa,
+  goback: gobackUa,
+  navigation: navigationUA,
+  electrical: electricalUA,
+  submitForm: submitFormUA,
 };
 
-export default ua
+export default ua;

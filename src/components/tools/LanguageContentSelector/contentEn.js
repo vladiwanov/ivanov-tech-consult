@@ -14,25 +14,26 @@ import consultingEn from "db/en/consulting-en";
 import gobackEn from "db/en/goback-en";
 import navigationEn from "db/en/navigation-en";
 import electricalEn from "db/en/electrical-en";
-
+import SubmitFormEn from "db/en/submitForm-en";
 
 const en = {
-    hero: heroEn,
-    business: businessEn,
-    directions: directionsEn,
-    benefits: benefitsEn,
-    informationsystems: informationsystemsEn,
-    team: teamEn,
-    submit: submitEn,
-    contactUs: contactUsEn,
-    securitySystems: securitySystemsEn,
-    fire: fireEn,
-    cctv: cctvEn,
-    alternativeEnergy: alternativeEnergyEn,
-    consulting: consultingEn,
-    goback: gobackEn,
-    navigation: navigationEn,
-    electrical: electricalEn,
+  hero: heroEn,
+  business: businessEn,
+  directions: directionsEn,
+  benefits: benefitsEn,
+  informationsystems: informationsystemsEn,
+  team: teamEn,
+  submit: submitEn,
+  contactUs: contactUsEn,
+  securitySystems: securitySystemsEn,
+  fire: fireEn,
+  cctv: cctvEn,
+  alternativeEnergy: alternativeEnergyEn,
+  consulting: consultingEn,
+  goback: gobackEn,
+  navigation: navigationEn,
+  electrical: electricalEn,
+  submitForm: SubmitFormEn,
 };
 
-export  default en
+export default en;
